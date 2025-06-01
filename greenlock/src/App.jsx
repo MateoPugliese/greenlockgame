@@ -40,10 +40,6 @@ function App() {
           </div>
         )}
 
-        {selected === 'Top' && (
-          <p>Global Top.</p>
-        )}
-
         {selected === 'Team' && (
           <div className="team-section">
             <div
@@ -55,8 +51,30 @@ function App() {
             <div className="team-content">
               <p>
                 Meet the crew!<br /><br />
-                We are a group of passionate game developers who love to create unique and engaging experiences. Our team is composed of talented individuals with diverse backgrounds in game design, programming, art, and sound. Together, we strive to push the boundaries of creativity and innovation in the gaming industry.
+                We are a group of passionate game developers who love to create unique and engaging experiences.
               </p>
+              <div className="team-members">
+                <div className="team-member">
+                  <strong>Ismael Viloria</strong>
+                  <p>Documentation Director & Project Manager</p>
+                </div>
+                <div className="team-member">
+                  <strong>Deiber Hernández</strong>
+                  <p>Design Director</p>
+                </div>
+                <div className="team-member">
+                  <strong>Mateo Pugliese</strong>
+                  <p>Testing Director</p>
+                </div>
+                <div className="team-member">
+                  <strong>José Villa</strong>
+                  <p>Developer</p>
+                </div>
+                <div className="team-member">
+                  <strong>Ricardo Valencia</strong>
+                  <p>Developer</p>
+                </div>
+              </div>
             </div>
           </div>
         )}
@@ -76,7 +94,6 @@ function App() {
         <img src={logo} className="logo" alt="Logo" />
         <div className="menu">
           <button onClick={() => setSelected('About')}>› About</button>
-          <button onClick={() => setSelected('Top')}>› Top</button>
           <button onClick={() => setSelected('Team')}>› Team</button>
         </div>
       </div>
