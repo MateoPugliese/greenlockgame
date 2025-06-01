@@ -1,5 +1,23 @@
 {
+  "name": "greenlockgame",
+  "version": "1.0.0",
+  "private": true,
+  "homepage": "https://MateoPugliese.github.io/greenlockgame",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
+  },
   "dependencies": {
-    "framer-motion": "^12.11.4"
+    "framer-motion": "^12.11.4",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  },
+  "devDependencies": {
+    "vite": "^4.0.0",
+    "gh-pages": "^5.0.0",
+    "@vitejs/plugin-react": "^3.0.0"
   }
 }
